@@ -111,7 +111,7 @@ for reward_structure in ["standard", "cascade", "independent"]:
     plt.xlabel("data size (n)")
     plt.ylabel("MSE (relative)")
     plt.xticks(["250", "500", "1000", "2000", "4000"])
-    plt.legend(loc="center right")
+    plt.legend(loc="upper right")
     plt.savefig(
         f"./figs/data size ({reward_structure}).png", dpi=300, bbox_inches="tight"
     )
