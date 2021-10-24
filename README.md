@@ -21,16 +21,24 @@ python setup.py install
 ```
 
 ### Running the code
-To run the real-world experiment, navigate to the `src/` directory and run the following commands.
+To run the synthetic experiment, navigate to the `src/` directory and run the following commands.
 Make sure to connect path to the cloned `obp` directory to run the experiment.
 
 (i) experiment for varying data size, with the fixed slate size.
 ```bash
-python main.py setting=n_rounds
+python src/main.py setting=n_rounds
 ```
 
 (ii), (iii) experiment for varying slate size and policy similarities, with the fixed data size.
 ```bash
-python main.py
+python src/main.py
 ```
 Once the code is finished executing, you can find the results (`squared_error.csv`, `relative_ee.csv`, `configuration.csv`) in `./logs/` directory. Lower value is better for squared error and relative estimation error (relative-ee).
+
+### Visualize the results
+To visualize the results, run the following commands.
+Make sure that you have executed the above two experiments (by running `python src/main.py` and `python src/main.py setting=default`) beforehand.
+```bash
+python src/visualize.py
+```
+Once the code is finished executing, you can find the following figures (`slate size (standard/cascade/independent).png`, `evaluation policy similarity (standard/cascade/independent).png`, `data size (standard/cascade/independent).png`) in `./logs/` directory. Lower value is better for the relative-MSE (y-axis).
