@@ -14,9 +14,9 @@ import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.utils import check_random_state
 
-from obp.ope import SlateOffPolicyEvaluation
-from obp.ope import SlateRegressionModel
-from obp.ope import (
+from obp.ope.meta_slate import SlateOffPolicyEvaluation
+from obp.ope.regression_model_slate import SlateRegressionModel
+from obp.ope.estimators_slate import (
     SlateStandardIPS,
     SlateIndependentIPS,
     SlateRewardInteractionIPS,
