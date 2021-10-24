@@ -13,7 +13,7 @@ title = {Doubly Robust Off-Policy Evaluation for Ranking Policies under the Casc
 year = {2022},
 booktitle = {Proceedings of the 15th International Conference on Web Search and Data Mining},
 pages = {xxx--xxx},
-year={2022},
+year = {2022},
 }
 ```
 
