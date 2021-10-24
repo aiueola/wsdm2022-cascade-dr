@@ -1,0 +1,10 @@
+defaults:
+  - regression_model_hyperparams: default
+  - setting: default
+
+hydra:
+  run:
+    dir: ./logs/${setting.experiment}/${hydra.job.override_dirname}
+  sweep:
+    dir: ./logs/${setting.experiment}/${hydra.job.override_dirname}
+    subdir: ./

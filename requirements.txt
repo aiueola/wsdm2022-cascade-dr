@@ -1,0 +1,4 @@
+numpy==1.20.0
+pandas==1.2.1
+scikit-learn==0.24.1
+hydra==1.0.6

@@ -1,0 +1,37 @@
+# @package _group_
+experiment: default
+n_rounds: 1000
+n_unique_action: 5
+len_list:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+dim_context: 5
+reward_type: binary
+reward_structure:
+  - standard
+  - cascade
+  - independent
+interaction_function:
+  - additive
+  - decay
+decay_function:
+  - inverse
+click_model: cascade
+eta: 
+  - 0.0
+behavior_policy: linear
+is_factorizable: True
+lambda_:
+  - -0.8
+  - -0.6
+  - -0.4
+  - -0.2
+  - 0.0
+  - 0.2
+  - 0.4
+  - 0.6
+  - 0.8
+n_random_state: 10000
