@@ -3,17 +3,16 @@
 ---
 
 ### About
-This repository contains the code to replicate the synthetic experiment conducted in the paper Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model by [Haruka Kiyohara](https://sites.google.com/view/harukakiyohara), [Yuta Saito](https://usaito.github.io/), Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto, which has been accepted to [WSDM2022](https://www.wsdm-conference.org/2022/).
+This repository contains the code to replicate the synthetic experiment conducted in the paper "Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model" by [Haruka Kiyohara](https://sites.google.com/view/harukakiyohara), [Yuta Saito](https://usaito.github.io/), Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto, which has been accepted to [WSDM2022](https://www.wsdm-conference.org/2022/).
 
 If you find this code useful in your research then please site:
 ```
 @inproceedings{kiyohara2022doubly,
-author = {Kiyohara, Haruka and Saito, Yuta and Matsuhiro, Tatsuya and Narita, Yusuke and Shimizu, Nobuyuki and Yamamoto, Yasuo},
-title = {Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model},
-year = {2022},
-booktitle = {Proceedings of the 15th International Conference on Web Search and Data Mining},
-pages = {xxx--xxx},
-year = {2022},
+  author = {Kiyohara, Haruka and Saito, Yuta and Matsuhiro, Tatsuya and Narita, Yusuke and Shimizu, Nobuyuki and Yamamoto, Yasuo},
+  title = {Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model},
+  booktitle = {Proceedings of the 15th International Conference on Web Search and Data Mining},
+  pages = {xxx--xxx},
+  year = {2022},
 }
 ```
 
