@@ -42,3 +42,9 @@ Make sure that you have executed the above two experiments (by running `python s
 python src/visualize.py
 ```
 Once the code is finished executing, you can find the following figures (`slate size (standard/cascade/independent).png`, `evaluation policy similarity (standard/cascade/independent).png`, `data size (standard/cascade/independent).png`) in `./logs/` directory. Lower value is better for the relative-MSE (y-axis).
+
+| reward structure                        |  Standard                                                      |  Cascade                                                        |      Independent               |
+| :-------------------------------------: | :------------------------------------------------------------: | :-----------------------------------------:                   | ------------------------------------------------------------ |
+| change data size (n)                    | <img src="./figs/data size (standard).png">                    | <img src="./figs/data size (cascade).png">                    | <img src="./figs/data size (independent).png">                    |
+| change slate size (L)                   | <img src="./figs/slate size (standard).png">                   | <img src="./figs/slate size (cascade).png">                   | <img src="./figs/slate size (independent).png">                   |
+| change evaluation policy similarity (λ) | <img src="./figs/evaluation policy similarity (standard).png"> | <img src="./figs/evaluation policy similarity (cascade).png"> | <img src="./figs/evaluation policy similarity (independent).png"> |
