@@ -26,7 +26,7 @@ This repository supports Python 3.7 or newer.
 - obp==0.5.2
 - hydra-core==1.0.6
 
-Note that the proposed Cascade-DR estimator is implemented in [Open Bandit Pipeline](https://github.com/st-tech/zr-obp) (`obp.ope.CascadeDoublyRobust`).
+Note that the proposed Cascade-DR estimator is implemented in [Open Bandit Pipeline](https://github.com/st-tech/zr-obp) (`obp.ope.SlateCascadeDoublyRobust`).
 
 ### Running the code
 To run the synthetic experiment, navigate to the `src/` directory and run the following commands.
