@@ -137,9 +137,8 @@ def generate_and_obtain_dataset(
     bandit_feedback[
         "evaluation_policy_action_dist"
     ] = dataset.calc_evaluation_policy_action_dist(
-        bandit_feedback=bandit_feedback,
+        action=bandit_feedback["action"],
         evaluation_policy_logit_=evaluation_policy_logit_,
-        is_factorizable=is_factorizable,
     )
     with open(path_bandit_feedback, "wb") as f:
         pickle.dump(bandit_feedback, f)
