@@ -137,9 +137,8 @@ def generate_and_obtain_dataset(
     bandit_feedback[
         "evaluation_policy_action_dist"
     ] = dataset.calc_evaluation_policy_action_dist(
-        bandit_feedback=bandit_feedback,
+        action=bandit_feedback["action"],
         evaluation_policy_logit_=evaluation_policy_logit_,
-        is_factorizable=is_factorizable,
     )
     with open(path_bandit_feedback, "wb") as f:
         pickle.dump(bandit_feedback, f)
@@ -205,8 +204,16 @@ def evaluate_estimators(
     ope = SlateOffPolicyEvaluation(
         bandit_feedback=bandit_feedback,
         ope_estimators=[ips, iips, rips, cascade_dr],
-        base_regression_model=base_regression_model,
-        is_factorizable=is_factorizable,
+    )
+    q_hat = base_regression_model.fit_predict(
+        context=bandit_feedback["context"],
+        action=bandit_feedback["action"],
+        reward=bandit_feedback["reward"],
+        pscore_cascade=bandit_feedback["pscore_cascade"],
+        evaluation_policy_pscore_cascade=bandit_feedback[
+            "evaluation_policy_pscore_cascade"
+        ],
+        evaluation_policy_action_dist=bandit_feedback["evaluation_policy_action_dist"],
     )
     # squared errors and relative estimation erros
     se_dict_ = ope.evaluate_performance_of_estimators(
@@ -219,6 +226,7 @@ def evaluate_estimators(
             "evaluation_policy_pscore_cascade"
         ],
         evaluation_policy_action_dist=bandit_feedback["evaluation_policy_action_dist"],
+        q_hat=q_hat,
         metric="se",
     )
     relative_ee_dict_ = ope.evaluate_performance_of_estimators(
@@ -231,6 +239,7 @@ def evaluate_estimators(
             "evaluation_policy_pscore_cascade"
         ],
         evaluation_policy_action_dist=bandit_feedback["evaluation_policy_action_dist"],
+        q_hat=q_hat,
         metric="relative-ee",
     )
 
