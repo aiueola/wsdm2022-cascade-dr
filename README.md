@@ -3,7 +3,7 @@
 ---
 
 ### About
-This repository contains the code to replicate the synthetic experiment conducted in the paper "[Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model](https://dl.acm.org/doi/10.1145/3488560.3498380)" by [Haruka Kiyohara](https://sites.google.com/view/harukakiyohara), [Yuta Saito](https://usait0.com/en/), Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto, which has been honored as **Best Paper Award Runner-Up** at [WSDM2022](https://www.wsdm-conference.org/2022/).
+This repository contains the code to replicate the synthetic experiment conducted in the paper "[Doubly Robust Off-Policy Evaluation for Ranking Policies under the Cascade Behavior Model](https://dl.acm.org/doi/10.1145/3488560.3498380)" by [Haruka Kiyohara](https://sites.google.com/view/harukakiyohara), [Yuta Saito](https://usait0.com/en/), Tatsuya Matsuhiro, Yusuke Narita, Nobuyuki Shimizu, and Yasuo Yamamoto, which has been honored as **Best Paper Award Runner-Up** at [WSDM2022](https://www.wsdm-conference.org/2022/). [[paper](https://dl.acm.org/doi/10.1145/3488560.3498380)] [[slide](https://speakerdeck.com/aiueola/doubly-robust-off-policy-evaluation-for-ranking-policies-under-the-cascade-behavior-model)]
 
 If you find this code useful in your research then please site:
 ```
